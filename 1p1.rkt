@@ -10,7 +10,6 @@
     a)
 ; if b >a && b < a*b, print b, else print a. prints 4.
 
-
 (cond ((= a 4) 6)
         ((= b 4) (+ 6 7 a))
         (else 25))
@@ -69,8 +68,6 @@
 ; APPLICATIVE: first line calls p, but p calls p. recursion ∞!
 ; NORMAL: if x = 0, the expression = 0. otherwise call p but that doesn't happen.
 
-
-
 ; EXERCISE 1.6:
 
 (define (new-if predicate then-clause else-clause)
@@ -81,9 +78,6 @@
     (new-if (good-enough? guess x)
         guess
         (sqrt-iter (improve guess x) x)))
-
-
-
 
 ; guess = current approx (1)
 ; x = number we want sqrt of (2)
@@ -119,38 +113,4 @@
 ; EXERCISE 1.8: 
 
 ; SKIPPED
-
-; EXERCISE 1.9:
-
-(+ 4 5) ; prints 9whats iterative vs. recursive? what does SICP want me to understand to become wizard
-
-(define (r+ a b)
-    (if (= a 0) b ; BASE CASE
-        (inc (r+ (dec a) b)))) ; RECURSION (+ is a function, not a math operation)
-
 |#
-
-(define (inc x) 
-    (+ x 1))
-(define (dec x) 
-    (- x 1))
-
-(define (i+ a b)
-    (if (= a 0) b ; BASE CASE
-        (i+ (dec a) (inc b)))) ; ITERATIVE: stops when a = 0 and b = 9.
-
-(+ 4 5) 
-
-; EXERCISE 1.10:
-
-;PAUSE
-
-(define (Apply x y)
-    (cond ((= y 0) 0)
-        ((= x 0) (* 2 y))
-        ((= y 1) 2)
-        (else (Apply (- x 1) (Apply x (- y 1))))))
-
-apply (9) (Apply (1 9))
-
-(A 1 10)
