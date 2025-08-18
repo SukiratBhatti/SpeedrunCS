@@ -1,0 +1,19 @@
+# Project:
+- AI, voice-based OS like in the movie "Her"
+
+# PREREQUISITES:
+
+- assembly
+- CS from notation to DSA
+- emulators and virtualizers / toolchain
+- operating systems
+
+# VISION:
+
+- instead of keystrokes / mouseclicks, use the soundcard to capture audio commands by the user
+- I haven't interacted with the OS, so this is a naive vision could pivot.
+- possible pivot: voice controlled systems
+
+# PHILOSOPHY:
+
+- instead of foucsing on an idea, we can pivot quickly until we land on an idea that users want.
