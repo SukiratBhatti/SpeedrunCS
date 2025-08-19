@@ -2,9 +2,9 @@
 #include <assert.h>
 
 int increment(int y) {
-    assert(y>=0);
+    assert(y >= 0);
     if (y == 0) return 1;
-    if (y&1) // odd num
+    if (y & 1) // odd num
         return 2 * increment(y >> 1);
     else  // even
         return y + 1;
