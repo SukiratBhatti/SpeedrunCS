@@ -1,4 +1,0 @@
-- voice based OS (movie: Her) --> voice module on linux kernel
-- trading platform for AIs ()
-- cursor for writing
-- 
